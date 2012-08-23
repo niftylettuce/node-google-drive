@@ -1,3 +1,4 @@
+[![build status](https://secure.travis-ci.org/niftylettuce/node-google-drive.png)](http://travis-ci.org/niftylettuce/node-google-drive)
 
 # node-google-drive
 
