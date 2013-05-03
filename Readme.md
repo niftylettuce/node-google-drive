@@ -31,12 +31,17 @@ var token = 'abc123456'
   , fileId = 'def123456'
 
 function getFile(token, fileId, callback) {
-  googleDrive(token).files.get(fileId, callback)
+  googleDrive(token).files(fileId).get(callback)
 }
 
-function callback(err, response) {
+function listFiles(token, callback) {
+  googleDrive(token).files().get(callback)
+}
+
+function callback(err, response, body) {
   if (err) return console.log('err', err)
   console.log('response', response)
+  console.log('body', JSON.parse(body))
 }
 ```
 
@@ -50,40 +55,41 @@ Here are a few examples to get you started:
 
 ```js
 // Files - Get
-googleDrive(token).files.get(id, callback)
+googleDrive(token).files(id).get(params, callback)
 
 // Files - Insert
-googleDrive(token).files.insert(data, callback)
+googleDrive(token).files().insert(meta, params, callback)
 
 // Files - Patch
-googleDrive(token).files.patch(id, data, callback)
+googleDrive(token).files(id).patch(meta, params, callback)
 
 // Files - Update
-googleDrive(token).files.update(id, data, callback)
+googleDrive(token).files(id).update(meta, params, callback)
 
 // Files - Copy
-googleDrive(token).files.copy(id, data, callback)
+googleDrive(token).files(id).copy(meta, params, callback)
 
 // Files - Delete
-googleDrive(token).files.del(id, callback)
+googleDrive(token).files(id).del(callback)
 
 // Files - List
-googleDrive(token).files.list(callback)
+googleDrive(token).files().list(params, callback)
 
 // Files - Touch
-googleDrive(token).files.touch(id, callback)
+googleDrive(token).files(id).touch(callback)
 
 // Files - Trash
-googleDrive(token).files.trash(id, callback)
+googleDrive(token).files(id).trash(callback)
 
 // Files - Untrash
-googleDrive(token).files.untrash(id, callback)
+googleDrive(token).files(id).untrash(callback)
 ```
 
 
 ## Contributors
 
 * Nick Baugh <niftylettuce@gmail.com> (http://niftylettuce.com)
+* healdessme <hello@coggle.it> (http://coggle.it)
 
 
 ## License
@@ -109,3 +115,4 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
+
