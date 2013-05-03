@@ -1,11 +1,11 @@
 {
     "name": "google-drive"
-  , "description": "Node.js library for accessing Google Drive's API at <https://developers.google.com/drive/v2/reference/>"
+  , "description": "Node.js library for accessing Google Drive's API at <https://developers.google.com/drive/v2/reference>"
   , "version": "0.0.2"
   , "author": "Nick Baugh <niftylettuce@gmail.com>"
   , "contributors": [
-      { "name": "Nick Baugh", "email": "niftylettuce@gmail.com" }
-      { "name": "headlessme", "email": "hello@coggle.it" }
+        { "name": "Nick Baugh", "email": "niftylettuce@gmail.com" }
+      , { "name": "headlessme", "email": "hello@coggle.it" }
     ]
   , "keywords": [ "google", "drive", "gdrive", "google-drive", "node-google", "node-google-drive", "node-gdrive", "api" ]
   , "homepage": "https://github.com/niftylettuce/node-google-drive"
