@@ -1,27 +1,46 @@
 {
-    "name": "google-drive"
-  , "description": "Node.js library for accessing Google Drive's API at <https://developers.google.com/drive/v2/reference>"
-  , "version": "0.0.2"
-  , "author": "Nick Baugh <niftylettuce@gmail.com>"
-  , "contributors": [
-        { "name": "Nick Baugh", "email": "niftylettuce@gmail.com" }
-      , { "name": "headlessme", "email": "hello@coggle.it" }
-    ]
-  , "keywords": [ "google", "drive", "gdrive", "google-drive", "node-google", "node-google-drive", "node-gdrive", "api" ]
-  , "homepage": "https://github.com/niftylettuce/node-google-drive"
-  , "repository": {
-        "type": "git"
-      , "url": "https://github.com/niftylettuce/node-google-drive.git"
+  "name": "google-drive",
+  "description": "Node.js library for accessing Google Drive's API at <https://developers.google.com/drive/v2/reference>",
+  "version": "0.0.3",
+  "author": "Nick Baugh <niftylettuce@gmail.com>",
+  "contributors": [
+    {
+      "name": "Nick Baugh",
+      "email": "niftylettuce@gmail.com"
+    },
+    {
+      "name": "headlessme",
+      "email": "hello@coggle.it"
     }
-  , "engines": {
-      "node": ">= 0.6.0"
-    }
-  , "main": "lib/main.js"
-  , "dependencies": {}
-  , "devDependencies": {
-     "vows": ">= 0.6.2",
-     "everyauth": ">= 0.2.32",
-     "express": ">= 2.5.9"
+  ],
+  "keywords": [
+    "google",
+    "drive",
+    "gdrive",
+    "google-drive",
+    "node-google",
+    "node-google-drive",
+    "node-gdrive",
+    "api"
+  ],
+  "homepage": "https://github.com/niftylettuce/node-google-drive",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/niftylettuce/node-google-drive.git"
+  },
+  "engines": {
+    "node": ">= 0.6.0"
+  },
+  "main": "lib/main.js",
+  "dependencies": {
+    "request": "~2.21.0"
+  },
+  "devDependencies": {
+    "vows": ">= 0.6.2",
+    "everyauth": ">= 0.2.32",
+    "express": ">= 2.5.9"
+  },
+  "scripts": {
+    "test": "vows test/*"
   }
-  , "scripts": { "test": "vows test/*" }
 }
