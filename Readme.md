@@ -83,6 +83,12 @@ googleDrive(token).files(id).trash(callback)
 
 // Files - Untrash
 googleDrive(token).files(id).untrash(callback)
+
+// Changes - List
+googleDrive(token).changes.list(params, callback)
+
+// Changes - Get
+googleDrive(token).chances.get(params, callback)
 ```
 
 
