@@ -90,6 +90,7 @@ googleDrive(token).files(id).untrash(callback)
 
 * Nick Baugh <niftylettuce@gmail.com> (http://niftylettuce.com)
 * healdessme <hello@coggle.it> (http://coggle.it)
+* Zlati Pehlivanov <zlati.pehlivanov@gmail.com>
 
 
 ## License
