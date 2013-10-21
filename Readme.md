@@ -1,3 +1,4 @@
+[![Gittip](http://badgr.co/gittip/niftylettuce.png)](https://www.gittip.com/niftylettuce/)
 
 # node-google-drive <sup>[![Version Badge](http://vb.teelaun.ch/niftylettuce/node-google-drive.svg)](https://npmjs.org/package/google-drive)</sup>
 
