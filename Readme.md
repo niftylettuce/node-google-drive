@@ -90,6 +90,10 @@ googleDrive(token).changes.list(params, callback)
 
 // Changes - Get
 googleDrive(token).chances.get(params, callback)
+
+// Children - List
+googleDrive(token).children(folderId).list(params, callback)
+
 ```
 
 
